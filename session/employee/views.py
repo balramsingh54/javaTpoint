@@ -11,4 +11,4 @@ def setsession(request):
 def getsession(request):
     name = request.session['sname']
     email = request.session['semail']
-    return HttpResponse(name +"   "+ email)
+    return HttpResponse(name +" and   "+ email)
