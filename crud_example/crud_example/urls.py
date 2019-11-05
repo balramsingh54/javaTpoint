@@ -20,4 +20,5 @@ from employee.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('set', setsession),
+    path('get', getsession),
 ]
