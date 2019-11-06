@@ -9,4 +9,4 @@ class Employee(models.Model):
     eContact = models.CharField(max_length=20)
 
     class Meta:  
-       db_table = "employee"
+        db_table = "employee"
