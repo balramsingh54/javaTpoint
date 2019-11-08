@@ -6,4 +6,6 @@ import datetime
 
 def home(request):
     mytime = datetime.datetime.now().date()
-    return render(request, 'home.html',{'mytime':mytime})
+
+    dayofweek =  ['monday', 'tuesday', 'wednesday', 'thursday', 'friday','saturday', 'sunday']
+    return render(request, 'home.html',{'mytime':mytime, 'dayofweek':dayofweek})
