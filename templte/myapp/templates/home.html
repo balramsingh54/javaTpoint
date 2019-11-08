@@ -1,7 +1,23 @@
 <html>
     <body>
         <h1> Balram Kumar Singh </h1>
-        time is {{ mytime }} <br>
-        time is {{ context }}
+        Today is: - 
+        <h3> {{ mytime }}</h3> <br>
+
+        {% if mytime.day == 1  %}
+        the first day of the month
+
+        {% elif mytime.day == 8  %}
+        Today is 8th of the month
+
+        {% elif mytime.day == 30  %}
+        the last day of the month
+        
+        {% else %}
+        I don't know
+
+        {% endif %}
+
+
     </body>
 </html>
